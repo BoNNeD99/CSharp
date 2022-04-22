@@ -16,8 +16,7 @@ namespace HomeWork.Class05.Exercise
 
             Human person = new Human(Name, LastName, Age);
             HumanInfoResults result = person.GetPersonStats();
-
-            Console.WriteLine(string.Format("{0} {1}", result.FullName, result.Age));
+            Console.WriteLine(string.Format("{0} {1}", result.FullName, result.Age) );
 
 
             Console.ReadLine();

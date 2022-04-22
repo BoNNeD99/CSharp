@@ -8,6 +8,5 @@ namespace HomeWork.Class05.Exercise
     {
         public string FullName { get; set; }
         public int Age { get; set; }
-        public DateTime DateOfBirth { get; set; }
     }
 }
