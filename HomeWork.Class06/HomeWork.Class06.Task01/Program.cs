@@ -6,17 +6,18 @@ namespace HomeWork.Class06.Task01
     {
         static void Main(string[] args)
         {
+            double[] numbers = new double[] { 3, 52, 11.6, -6.3, -60,  3123, 0.5, 43235.2 };
 
             Console.WriteLine("Please Enter a number: ");
 
             if (int.TryParse(Console.ReadLine(), out int input))
             {
                 double[] numbers = new double[] { input };
-                foreach (double number in numbers)
-                {
-                    NumberStats numberStats = NumberStats(number);
-                    numberStats.PrintInfo();
-                }
+            foreach (double number in numbers)
+            {
+                NumberStats numberStats = NumberStats(number);
+                numberStats.PrintInfo();
+            }
             }else
             {
                 Console.WriteLine("This is not a number!");
@@ -33,7 +34,7 @@ namespace HomeWork.Class06.Task01
                 stats.isNegative = number < 0;
                 return stats;
             }
-
+           
 
             Console.ReadLine();
         }
