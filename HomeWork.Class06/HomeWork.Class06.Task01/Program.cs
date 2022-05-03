@@ -6,7 +6,6 @@ namespace HomeWork.Class06.Task01
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Please Enter a number: ");
 
             if (int.TryParse(Console.ReadLine(), out int input))
