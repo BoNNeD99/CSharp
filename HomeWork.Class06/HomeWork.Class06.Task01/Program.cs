@@ -14,9 +14,10 @@ namespace HomeWork.Class06.Task01
                 double[] numbers = new double[] { input };
                 foreach (double number in numbers)
                 {
-                    NumberStats numberStats = NumberStats(number);
-                    numberStats.PrintInfo();
+                NumberStats numberStats = NumberStats(number);
+                numberStats.PrintInfo();
                 }
+
             }else
             {
                 Console.WriteLine("This is not a number!");
@@ -33,7 +34,7 @@ namespace HomeWork.Class06.Task01
                 stats.isNegative = number < 0;
                 return stats;
             }
-
+           
 
             Console.ReadLine();
         }
